@@ -193,8 +193,16 @@ body{
     width: 100%;
     height: 41vh;
     margin-top: 40px;
-    background: linear-gradient(180deg, #F7F8C9 0.31%, rgba(250, 255, 187, 0) 87.81%);
     border-radius: 16px;
+}
+
+#img1{
+    background: url(./climate.jpg) no-repeat ;
+
+
+}
+#img2{
+    background: url(./diversity.webp) no-repeat ;
 }
 
 #page3{
@@ -280,8 +288,19 @@ body{
     border-radius: 30px;
     position: relative;
     background-color: rgb(206, 206, 206);
-    
 }
+.lhs{
+    background:url(./train.avif) no-repeat;
+    background-size:cover
+}
+#rhsbox1{
+    background:url(./solar-power.avif) no-repeat;
+    background-size: contain;
+}
+#rhsbox2{
+    background:url(./adult-diapers.avif) no-repeat;
+    background-size: contain;
+} 
 
 .box .rhs{
     margin-left: 1%;
