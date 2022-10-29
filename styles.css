@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Arbutus+Slab&family=Quicksand:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Lacquer&family=Marko+One&family=Satisfy&display=swap');
+
 *{
     margin: 0%;
     padding: 0%;
@@ -10,6 +13,7 @@ body{
     animation: transitionin 2s;
 }
 
+
 @keyframes transitionin{
     from{
         opacity: 0;
@@ -19,6 +23,16 @@ body{
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+p{
+    font-family: 'Arbutus Slab', serif;
+    font-weight: 300;
+}
+
+h1,h2,h3,h4{
+    font-family: 'Quicksand', sans-serif;
+   letter-spacing: .6px;
 }
 
 #page1{
@@ -48,6 +62,11 @@ body{
     align-items: center;
     width: 35%;
     padding: 0% 7%;
+}
+
+.nav .logo p{
+    font-family: 'Marko One', serif;
+
 }
 
 .nav .mainnav{
@@ -121,7 +140,6 @@ body{
     
 
     background: rgba(195, 241, 191, 0.34);
-    border-radius: 25px;
 }
 
 .content1{
@@ -132,8 +150,8 @@ body{
     top: 56px;
 
     background: url('planting\ a\ tree.jpeg');
-    background-size: 100% 144%;
-    background-position: 0% 38%;
+    background-size: 100% 149%;
+    background-position: 0% 39%;
     mix-blend-mode: multiply;
     border-radius: 0px 0px 466px 0px;   
 }
@@ -145,12 +163,80 @@ body{
     flex-direction: column;
     padding: 70px 80px;
     padding-bottom: 0;
+    position: relative;
+    background: linear-gradient(180deg, rgb(249, 243, 184) 0%, rgba(247,248,248,0.3676821070224965) 100%);
     
+}
+/* 
+.custom-shape-divider-bottom-1666442053 {
+    position: absolute;
+    bottom: 40px;
+    left: 80px;
+    
+    height: 40%;
+    width: 85%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1666442053 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1666442053 .shape-fill {
+    opacity: .4;
+    fill: wheat;
+} */
+
+#page2 #img1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#img1 .img1box1{
+    width: 30%;
+    height: 90%;
+    border-radius: 20px;
+    background: url('greenarticle.png');
+    background-size: 120%;
+    z-index: 50;
+    transform: perspective(800px) rotate3D(0, 20, 0, 8deg);
+    box-shadow: 15px 15px 50px rgb(83, 85, 79);
+
+}
+
+#img1 .img1box1:hover{
+    transform: perspective(800px) rotate3D(0, 20, 0, -8deg);
+    box-shadow: -15px 15px 50px rgb(83, 85, 79);
+    transition: all .5s ease-out ;
+}
+
+#img1 .img1box2{
+    width: 30%;
+    height: 90%;
+    border-radius: 20px;
+    background: url('greenarticle2.jpg');
+    background-size: 95% 95%;
+    z-index: 50;
+    transform: perspective(800px) rotate3D(0, 20, 0, -8deg);
+    mix-blend-mode:darken;
+    box-shadow: -15px 15px 50px rgb(83, 85, 79);
+}
+
+#img1 .img1box2:hover{
+    transform: perspective(800px) rotate3D(0, 20, 0, 8deg);
+    box-shadow: 15px 15px 50px rgb(83, 85, 79);
+
+    transition: all .5s ease-out ;
 }
 
 .projects .heading{
     width: 100%;
-    height: 176px;
     display: flex;
     flex-direction: row;
 }
@@ -175,6 +261,13 @@ body{
     align-items: center;
 }
 
+.projectno:hover{
+    transform: rotateX(360deg);
+    
+    transition:all 1.5s ;
+    transition-timing-function: ease-in-out;
+}
+
 .content2{
     width: 80%;
     margin-top: 40px;
@@ -196,14 +289,8 @@ body{
     border-radius: 16px;
 }
 
-#img1{
-    background: url(./climate.jpg) no-repeat ;
 
 
-}
-#img2{
-    background: url(./diversity.webp) no-repeat ;
-}
 
 #page3{
     width: 100%;
@@ -212,7 +299,74 @@ body{
     flex-direction: column;
     padding: 70px 80px;
     padding-bottom: 0;
+    position: relative;
+    background: linear-gradient(180deg, rgb(231, 248, 171) 0%, rgba(247,248,248,0.3676821070224965) 100%);
     
+}
+
+.custom-shape-divider-bottom-1666438967 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1666438967 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1666438967 .shape-fill {
+    fill: #d9ffb8;
+}
+
+#page3 #img2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#img2 .img2box1{
+    width: 30%;
+    height: 90%;
+    border-radius: 20px;
+    background: url('thehungerarticle.jpg');
+    background-size: 120%;
+    z-index: 50;
+    transform: perspective(800px) rotate3D(0, 20, 0, -8deg);
+    box-shadow: 15px 15px 50px rgb(83, 85, 79);
+    mix-blend-mode:light;
+
+}
+
+#img2 .img2box1:hover{
+    transform: perspective(800px) rotate3D(0, 20, 0, 8deg);
+    box-shadow: -15px 15px 50px rgb(83, 85, 79);
+    transition: all .5s ease-out ;
+}
+
+
+#img2 .img2box2{
+    width: 30%;
+    height: 90%;
+    border-radius: 20px;
+    background: url('thehingerarticle2.jpg');
+    background-size: 100% 100%;
+    z-index: 50;
+    transform: perspective(800px) rotate3D(0, 20, 0, 8deg);
+    box-shadow: -15px 15px 50px rgb(83, 85, 79);
+}
+
+#img2 .img2box2:hover{
+    transform: perspective(800px) rotate3D(0, 20, 0, -8deg);
+    box-shadow: 15px 15px 50px rgb(83, 85, 79);
+    transition: all .5s ease-out ;
 }
 
 #page4{
@@ -222,6 +376,8 @@ body{
     flex-direction: column;
     padding: 70px 80px;
     padding-bottom: 0;
+    position: relative;
+    background: linear-gradient(180deg, rgb(206, 248, 241) 0%, rgba(247,248,248,0.3676821070224965) 100%);
     
 }
 
@@ -234,6 +390,8 @@ body{
     padding-bottom: 0;
     justify-content: center;
     align-items: center;
+    /* background: linear-gradient(90deg, rgba(130,235,237,1) 0%, rgba(192,255,10,1) 59%, rgba(242,255,10,0.03995101458552175) 100%); */
+
 }
 
 .heading2{
@@ -287,20 +445,22 @@ body{
     height: 100%;
     border-radius: 30px;
     position: relative;
-    background-color: rgb(206, 206, 206);
+    background-color: rgb(255, 255, 255);
 }
-.lhs{
-    background:url(./train.avif) no-repeat;
-    background-size:cover
-}
-#rhsbox1{
-    background:url(./solar-power.avif) no-repeat;
+
+.lhs1 {
+    height: 100%;
+    border-radius: inherit;
+    background: url('without soil.jpg');
     background-size: contain;
 }
-#rhsbox2{
-    background:url(./adult-diapers.avif) no-repeat;
-    background-size: contain;
-} 
+
+.lhs1:hover{
+    position: relative;;
+    scale: 1.1;
+    transition: .5s;
+    translate: -50px;
+}
 
 .box .rhs{
     margin-left: 1%;
@@ -351,6 +511,9 @@ body{
 
 #rhsbox1{
     position: relative;
+    background: url('solar.jpg');
+    background-size: 100% 75%;
+    
 }
 
 #rhsbox1 .innerinnerrhs{
@@ -362,6 +525,26 @@ body{
     padding: 10px;
     background-color:rgb(0, 58, 0);
 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#rhsbox2{
+    background: url('seaweed.jpg');
+    background-size: 100% 69%;
+    background-repeat: no-repeat;
+}
+
+
+#rhsbox2 .innerinnerrhs{
+    position: absolute;
+    bottom: 0;
+    height: 20%;
+    width: 100%;
+    border-radius: 30px;
+    padding: 10px;
+    background-color:rgb(0, 58, 0);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -400,8 +583,8 @@ body{
     height: 70vh;
     background-color: rgb(206, 206, 206);
     position: relative;
-    
-    
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .something2 .lhs2{
@@ -416,8 +599,35 @@ body{
     align-items: flex-start;
     justify-content: center;
     background-color: rgb(0, 58, 0);
-    color: white;
+    color: white;  
+}
+
+.something2 .rhs2{
+    width: 50%;
+    height: 100%;
+    padding: 40px;
     
+}
+
+.rhs2image{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background: url('getcash.jpg');
+    background-size: 110% 100%;
+    transform: perspective(800px) rotate3D(0, 20, 0, 8deg);
+    box-shadow: -15px 10px 50px rgb(245, 243, 105);
+    mix-blend-mode:light;
+    color: white;
+
+}
+
+.rhs2image a{
+    text-decoration: none;
+    color: white;
 }
 
 
@@ -542,7 +752,17 @@ body{
     background: white;
 }
 
-.blog1 .image{
+.blog1 .image1{
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    background: url('asteroid.jpg');
+    background-size: 100% 100%;
+
+}
+
+.blog1 .image2{
     width: 100%;
     height: 50%;
     border-radius: 10px;
@@ -551,8 +771,322 @@ body{
     background-size: contain;
 }
 
+.blog1 .image3{
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    background: url('foodwaterenergy.png');
+    background-size: 100% 100%;
+}
+
 .blog1 .contentblog1{
     width: 100%;
     height: 50%;
+}
 
+#blog2para{
+    text-overflow: ellipsis;
+}
+
+#contactme{                     /* Contacts Page */
+    display: flex;
+    flex-direction: row;
+    height: 58vh;
+    padding: 20px;
+    width: 100%;
+    background-color: rgb(76, 76, 76);
+}
+
+
+#contactme .contacthandles{         /* LHS Social handles */
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.socialmedia{
+    width: 50%;
+    height: 80%;
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1rem ;
+    border-right: 2px solid white;
+    border-radius: 20px;
+}
+
+
+.socialmedia i{
+    margin: 1%;
+    color: rgb(216, 199, 165);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.socialmedia i:hover{
+    scale: 1.1;
+    transition: .3s ease-in-out;
+}
+
+.socialmedia a{
+    font-size: 1.3rem;
+    color: rgb(255, 240, 240);
+}
+
+
+.physical{
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4% 9%;
+    border-left: 2px solid white;
+    border-radius: 20px;
+}
+
+
+.physical i{
+    margin: 3% 1%;
+    color: rgb(216, 199, 165);
+    cursor: pointer;
+
+}
+
+.physical i:hover{
+    scale: 1.1;
+    transition: .3s ease-in-out;
+}
+
+
+.physical a{
+    font-size: 1.3rem;
+    color: rgb(255, 240, 240);
+}
+
+
+.contactform{                       /* RHS Contactform div*/
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.container5{
+    position: relative;
+    z-index: 1000;
+    width: 63%;
+    height: 100%;
+    padding: 15px 25px;
+    background: rgba(210, 210, 210, 0.2);
+    color: black;
+    border-radius: 30px;
+    overflow: hidden;
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Perfect Example of bug is a feature */
+.container5 {
+    --borderWidth: 7px;
+    background: #1D1F20;
+    position: relative;
+    border-radius:5px 40px 5px 40px ;
+  }
+  .container5:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    /* left: calc(-1 * var(--borderWidth)); */
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    /* background: linear-gradient(60deg,yellow, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82); */
+
+    background: linear-gradient(50deg,rgb(234, 234, 234), #d5d5d5, #a7a7a7, #626262, #444444, #3b3b3b, #191919, #000000);
+
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    animation: animatedgradient 4s ease alternate infinite;
+    background-size: 300% 300%;
+  }
+
+
+  @keyframes animatedgradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+
+
+
+.container5 h2{
+    text-align: center;
+    font-family: 'Marko One', serif;
+    color: wheat;
+    font-size: 28px;
+    margin-bottom: 25px
+
+}
+
+
+.container5 .row100{
+    position: relative;
+    width: 85%;
+}
+
+
+.container5 .row100 .col{
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin: 13px 0 30px;
+}
+
+
+.container5 .row100 .col .inputBox{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: rgb(44, 44, 44);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
+.container5 .row100 .col .inputBox input,
+.container5 .row100 .col .inputBox textarea{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 0 10px;
+    z-index: 1;
+    color: rgb(0, 0, 0);
+}
+
+
+.container5 .row100 .col .inputBox .text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+    color: #000000;
+}
+
+
+.container5 .row100 .col .inputBox input:focus + .text,
+.container5 .row100 .col .inputBox input:valid + .text,
+.container5 .row100 .col .inputBox textarea:focus + .text,
+.container5 .row100 .col .inputBox textarea:valid + .text{
+    top: -35px;
+    left: -10px;
+}
+
+
+.container5 .row100 .col .inputBox .line{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(255, 255, 255,0.5);
+    transition: 0.5s;
+    border-radius: 7px;
+    pointer-events: none;
+}
+
+
+.container5 .row100 .col .inputBox input:focus ~ .line,
+.container5 .row100 .col .inputBox input:valid ~ .line{
+    height: 100%;
+}
+
+
+.container5 .row100 .col .inputBox .textarea{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+}
+
+
+.container5 .row100 .col .inputBox textarea:focus ~ .line,
+.container5 .row100 .col .inputBox textarea:valid ~ .line{
+    height: 100%;
+}
+
+
+form .btn1{  
+        width: 30%;
+        margin-top: -2%;
+        color: black;
+        font-size: 18px;
+        text-transform: uppercase;
+        border-radius: 0px 0px 30px 30px;
+        display: inline-block;
+        background: wheat;
+        border: none;
+        cursor: pointer;
+        font-family: 'Marko One', serif;
+        padding: 2px 5px;
+}
+
+form .btn1:hover {
+    scale: 1.1;
+    transition: .5s linear;
+}
+#contactme a{
+    text-decoration: none;
+}
+
+@media (max-width: 767px){                  /* Responsive Contact form*/
+
+    #contactme::before{
+        transform: translate(-200px,-180px);
+    }
+    #contactme::after{
+        transform: translate(220px,180px);
+    }
+
+    .container5{
+        padding: 20px;
+
+    }
+
+    .container5 h2{
+        font-size: 28px;
+    }
 }
